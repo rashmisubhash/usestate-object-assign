@@ -1,0 +1,82 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* headings */
+h1 {
+  text-shadow: -1px -1px 0px rgba(235, 112, 194, 0.3),
+    1px 1px 0px rgba(212, 34, 138, 0.8);
+  color: rgb(201, 0, 77);
+  opacity: 0.6;
+}
+
+h2 {
+  text-shadow: -1px -1px 0px rgba(235, 112, 194, 0.3),
+    1px 1px 0px rgba(212, 34, 138, 0.8);
+  color: rgb(255, 0, 0);
+  opacity: 0.7;
+}
+
+/* Container */
+.phone-specs {
+  border: 2px solid black;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgb(255, 221, 227);
+  border-radius: 20px;
+}
+
+/* Text */
+.phone-specs span {
+  display: block;
+  margin: 0.5rem 1rem;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: -1px -1px 0px rgba(235, 112, 194, 0.3),
+    1px 1px 0px rgba(182, 188, 245, 0.8);
+  color: rgb(47, 38, 172);
+  opacity: 0.9;
+}
+
+.update-phone-specs p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+/* buttons */
+
+button {
+  outline: 0;
+  grid-gap: 8px;
+  align-items: center;
+  background-color: #ff90e8;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all 0.14s ease-out;
+  white-space: nowrap;
+  margin: 0rem 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  box-shadow: 4px 4px 0 rgb(230, 44, 84);
+  transform: translate(-4px, -4px);
+}
+
+button:focus-visible {
+  outline-offset: 1px;
+}
