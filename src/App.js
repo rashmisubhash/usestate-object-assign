@@ -11,8 +11,8 @@ export default function App() {
       battery: "4000mAH",
       internet: {
         "4g": true,
-        "5g": false,
-      },
+        "5g": false
+      }
     };
   }
 
@@ -28,8 +28,8 @@ export default function App() {
       Object.assign({}, buyPhone, {
         internet: {
           "4g": !buyPhone.internet["4g"],
-          "5g": buyPhone.internet["5g"],
-        },
+          "5g": buyPhone.internet["5g"]
+        }
       })
     );
   }
@@ -55,6 +55,21 @@ export default function App() {
           }
         >
           Color
+        </button>
+        <button onClick={() => updateInternet()}>4g</button>
+        <button
+          onClick={() =>
+            setBuyPhone(
+              Object.assign({}, buyPhone, {
+                internet: {
+                  "4g": buyPhone.internet["4g"],
+                  "5g": !buyPhone.internet["5g"]
+                }
+              })
+            )
+          }
+        >
+          5g
         </button>
 
         <button onClick={() => setBuyPhone(resetSpecs())}>Reset</button>
